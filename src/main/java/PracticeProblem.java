@@ -2,13 +2,13 @@
  * File Name: errors.java
  * Author: Mr. Kalisz
  * Date Created: March 29, 2019
- * Date Last Edited: March 29, 2019
+ * Date Last Edited: February 26, 2026
  */
 
+import java.util.Scanner;
 
 class PracticeProblem {
 
-	static Scanner s = new Scanner();
   	public static void main(String[] args) {
 		
 		q1();
@@ -16,43 +16,61 @@ class PracticeProblem {
 		q3();
 		q4();
   	}
+
   	public static void q1() {
 		// From input, recieve two integers from the user and add them together.  Output the result.
 
-		System.out.println("Input a number: ");
-		num1 = s.nextInt;
-		System.out.println("Input a number: ");
-		num2 = s.nextInt;
+		Scanner s = new Scanner(System.in);
 
-		System.out.println(num + num2);
+		int num1;
+		int num2;
+
+		System.out.print("Input a number: ");
+		num1 = s.nextInt();
+		System.out.print("Input a number: ");
+		num2 = s.nextInt();
+
+		System.out.println(num1 + num2);
   	}
 
 	public static void q2() {
 		// From input recieve two integers.  Output the quotient rounded down.
+
+		Scanner s = new Scanner(System.in);
+
+		int num1;
+		int num2;
 		
-		System.out.println("Input a number: ");
-		num1 = s.nextLine();
-		System.out.println("Input a number: ");
-		num2 = s.nextLine();
+		System.out.print("Input a number: ");
+		num1 = s.nextInt();
+		System.out.print("Input a number: ");
+		num2 = s.nextInt();
 		
-		system.out.println(num1/num2);
+		System.out.println(num1/num2);
 	}
 
 	public static void q3() {
 		// Output the phrase "hello "Mr. Kalisz" have you seen my work yet?"
+
+		Scanner s = new Scanner(System.in);
 		
-		System.out.println(hello "Mr. Kalisz" have you seen my work yet?);
+		System.out.println("hello \"Mr. Kalisz\" have you seen my work yet?");
 	}
 
 	public static void q4() {
 		// From input recieve two numbers (can be decimal fractions).  
 		// Output the first number plus two, then multiplied by the second number.
+
+		Scanner s = new Scanner(System.in);
+
+		double num1;
+		double num2;
 		
-		System.out.println("Input a number: ");
-		s.nextInt();
-		System.out.println("Input a number: ");
-		num2 = s.nextInt();
+		System.out.print("Input a number: ");
+		num1 = s.nextDouble();
+		System.out.print("Input a number: ");
+		num2 = s.nextDouble();
 		
-		System.out.println(num1 + 2 * num2)
+		System.out.println((num1 + 2) * num2);
 	}
 }
